@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image and Vid Processing</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="./logo/camera1.jpg" alt="" />
+      </div>
+      <div class="gradient">
+        <h1>Image & Video Processing</h1>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="type">
+        <input type="radio" id="rd1" name="type" class="rdbtn" />
+        <label for="rd1">Image</label>
+        <input type="radio" id="rd2" name="type" class="rdbtn" />
+        <label for="rd2">Video</label>
+      </div>
+
+      <div class="file-upload">
+        <input
+          class="file-upload__input"
+          type="file"
+          name="myFile[]"
+          id="myFile"
+          multiple
+        />
+        <button class="file-upload__button" type="button">
+          Choose File(s)
+        </button>
+        <span class="file-upload__label"></span>
+      </div>
+
+      <div class="chkbox">
+        <div class="ck1">
+          <input type="checkbox" id="ck_bx1" name="type" class="cb1" />
+          <label for="ck_bx1">Greyscale</label>
+        </div>
+        <div class="ck1">
+          <input type="checkbox" id="ck_bx2" name="type1" class="cb1" />
+          <label for="ck_bx2" class="label">Reduce Size</label>
+        </div>
+      </div>
+
+      <div class="btns">
+        <label for="reduce" class="reduce">Enter reduction %</label>
+        <input type="text" id="reduce" class="field" />
+        <!-- <input type="button" name="" id="" value="Download" /> -->
+      </div>
+
+      <div>
+        <button class="download">Download</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
